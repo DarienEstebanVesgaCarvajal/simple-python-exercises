@@ -1,7 +1,7 @@
-import math
+firstNote = float(input("What's the first note?: "))
+secondNote = float(input("What's the second note?: "))
+thirdNote = float(input("What's the third note?: "))
+fourthNote = float(input("What's the fourth note?: "))
 
-constantPi = math.pi
-radius = float(input("What's the radius of the circle?: "))
-
-print(f"The circunference of the circe is {radius * 2 * math.pi:.7f}.")
-print(f"The area of the circle is {math.pi * radius ** 2:.7f}.")
+average = (firstNote + secondNote + thirdNote + fourthNote) / 4
+print(f"The average notes is: {average}.")
