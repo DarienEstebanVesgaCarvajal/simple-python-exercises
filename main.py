@@ -1,5 +1,6 @@
-number = input("What's the number to reverse it?: ")
+firstLeg = float(input("What's the first leg of a triangle?: "))
+secondLeg = float(input("What's the second leg of a triangle?: "))
 
-invertedNumber = number[::-1]
+hypotenuse = ((firstLeg ** 2 + secondLeg ** 2) ** 0.5)
 
-print(f"The inverted number is: {invertedNumber}.")
+print(f"The hypotenuse of a triangle is: {hypotenuse:.7f}")
