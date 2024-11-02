@@ -1,9 +1,5 @@
-currentHour =int(input("What's the current hout? (1-12): "))
-hoursAdd = int(input("What's number of hours to add?: "))
+userInput = float(input("What's the decimal number?: "))
 
-futureHour = (currentHour + hoursAdd) % 12
+decimalPart = abs(userInput) - int(abs(userInput))
 
-if futureHour == 0:
-    futureHour = 12
-
-print(f"In {hoursAdd} hours, the clock will show {futureHour}.")
+print(decimalPart)
