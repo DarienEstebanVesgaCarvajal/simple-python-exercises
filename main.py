@@ -1,6 +1,9 @@
-firstLeg = float(input("What's the first leg of a triangle?: "))
-secondLeg = float(input("What's the second leg of a triangle?: "))
+currentHour =int(input("What's the current hout? (1-12): "))
+hoursAdd = int(input("What's number of hours to add?: "))
 
-hypotenuse = ((firstLeg ** 2 + secondLeg ** 2) ** 0.5)
+futureHour = (currentHour + hoursAdd) % 12
 
-print(f"The hypotenuse of a triangle is: {hypotenuse:.7f}")
+if futureHour == 0:
+    futureHour = 12
+
+print(f"In {hoursAdd} hours, the clock will show {futureHour}.")
