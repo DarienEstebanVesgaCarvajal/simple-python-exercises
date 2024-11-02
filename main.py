@@ -1,7 +1,3 @@
-firstNote = float(input("What's the first note?: "))
-secondNote = float(input("What's the second note?: "))
-thirdNote = float(input("What's the third note?: "))
-fourthNote = float(input("What's the fourth note?: "))
-
-average = (firstNote + secondNote + thirdNote + fourthNote) / 4
-print(f"The average notes is: {average}.")
+unit = float(input("What's the longitud? (in cm)?: "))
+result = (unit/2.54)
+print(f"The value in inches is: {result}.")
