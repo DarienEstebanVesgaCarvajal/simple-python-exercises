@@ -1,3 +1,5 @@
-unit = float(input("What's the longitud? (in cm)?: "))
-result = (unit/2.54)
-print(f"The value in inches is: {result}.")
+number = input("What's the number to reverse it?: ")
+
+invertedNumber = number[::-1]
+
+print(f"The inverted number is: {invertedNumber}.")
